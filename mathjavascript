@@ -1,0 +1,26 @@
+import math
+
+def find_min_max(numbers):
+    min_num = min(numbers)
+    max_num = max(numbers)
+    return min_num, max_num
+
+def find_mean(numbers):
+    mean = sum(numbers) / len(numbers)
+    return mean
+
+# Given values
+numbers = [5, 78, 23, 41, 67, 84, 22, 10, 1]
+
+# Find min and max without sorting or looping
+min_value, max_value = find_min_max(numbers)
+
+# Find mean and round up
+mean_value = find_mean(numbers)
+ceiled_mean = math.ceil(mean_value)
+
+# Print results
+print(f"Minimum value: {min_value}")
+print(f"Maximum value: {max_value}")
+print(f"Mean value: {mean_value}")
+print(f"Ceiled mean value: {ceiled_mean}")
